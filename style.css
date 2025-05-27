@@ -1,0 +1,51 @@
+:root {
+    font-size: 62.5%
+}
+body {
+    background-color:beige;
+}
+h1 {
+    font-size: 5rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card-items {
+    width: 30rem;
+    margin: .5rem;
+    border: .1rem solid black;
+    border-radius: .8rem;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card-items img {
+    width: 30rem;
+}
+.card-items h2 {
+    font-size: 3rem;
+}
+.card-items p {
+    font-size: 2rem;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+button:hover {
+    background-color: #2E6C30;
+    transition: 02s ease;
+}
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
